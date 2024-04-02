@@ -1,3 +1,6 @@
+
+Medium Project link >> https://medium.com/@impradeep.techie/jenkins-pipeline-for-java-based-application-using-maven-sonarqube-argo-cd-and-kubernetes-908d4e8befea
+
 # Jenkins-Zero-To-Hero
 
 YouTube Video ->
