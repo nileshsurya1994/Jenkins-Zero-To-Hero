@@ -9,14 +9,15 @@ pipeline {
     stage('Checkout') {
       steps {
         sh 'echo passed'
-        git branch: 'main', url: 'https://github.com/nileshsurya1994/Jenkins-Zero-To-Hero.git'
+       // git branch: 'main', url: 'https://github.com/nileshsurya1994/Jenkins-Zero-To-Hero.git'
       }
     }
     stage('Build and Test') {
       steps {
         sh 'ls -ltr'
         // build the project and create a JAR file
-        sh 'cd /opt/Jenkins-Zero-To-Hero/java-maven-sonar-argocd-helm-k8s/spring-boot-app && mvn clean package'
+        // sh 'cd /opt/Jenkins-Zero-To-Hero/java-maven-sonar-argocd-helm-k8s/spring-boot-app && mvn clean package'
+          sh 'cd /var/lib/jenkins/workspace/JavaAppCICD/java-maven-sonar-argocd-helm-k8s/spring-boot-app && mvn clean package'
       }
     }
     stage('Static Code Analysis') {
